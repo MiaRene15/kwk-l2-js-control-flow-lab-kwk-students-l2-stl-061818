@@ -22,13 +22,15 @@ function switchOnCharmFromTip(tip) {
  switch(tip) { 
   case "generous": 
     say = "Thank you so much."; 
+    return say
   break; 
   case "not as generous":
     say = "Thank you.";
+    return say 
   break; 
   case "thanks for everything": 
     say = "Bye."
+    return say 
   break;
     }
-  return switch(tip)
 }
